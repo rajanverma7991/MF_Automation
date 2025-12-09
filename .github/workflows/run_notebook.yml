@@ -1,1 +1,33 @@
+name: Run Notebook & Publish Result
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # run every day at 02:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install Python & Jupyter
+      run: |
+        pip install jupyter nbconvert pandas numpy
+
+    - name: Run Notebook
+      run: |
+        jupyter nbconvert --to notebook --execute ALL_WEIGHTED.ipynb --output executed.ipynb
+
+    - name: Extract result from notebook
+      run: |
+        python extract.py
+
+    - name: Upload result to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
 
