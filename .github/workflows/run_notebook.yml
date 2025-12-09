@@ -25,7 +25,7 @@ jobs:
 
     - name: Run Jupyter Notebook
       run: |
-        jupyter nbconvert --to notebook --execute your_notebook.ipynb --output executed.ipynb
+        jupyter nbconvert --to notebook --execute ALL_WEIGHTED.ipynb --output executed.ipynb
 
     - name: Extract result
       run: |
