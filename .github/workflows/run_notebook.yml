@@ -2,32 +2,37 @@ name: Run Notebook & Publish Result
 
 on:
   schedule:
-    - cron: "0 8 * * *"   # run every day at 08:00 UTC
-  workflow_dispatch:
+    - cron: "0 8 * * *"     # every day at 08:00 UTC
+  workflow_dispatch:         # allow manual run
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout repo
       uses: actions/checkout@v3
 
-- name: Install Python & dependencies
-  run: |
-    pip install jupyter nbconvert pandas numpy yfinance requests lxml
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
 
-    - name: Run Notebook
+    - name: Install Python dependencies
       run: |
-        jupyter nbconvert --to notebook --execute ALL_WEIGHTED.ipynb --output executed.ipynb
+        python -m pip install --upgrade pip
+        python -m pip install jupyter nbconvert nbformat pandas numpy yfinance requests lxml
 
-    - name: Extract result from notebook
+    - name: Run Jupyter Notebook
+      run: |
+        jupyter nbconvert --to notebook --execute your_notebook.ipynb --output executed.ipynb
+
+    - name: Extract result
       run: |
         python extract.py
 
-    - name: Upload result to GitHub Pages
+    - name: Publish result to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
-
