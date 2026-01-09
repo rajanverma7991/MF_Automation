@@ -2,7 +2,7 @@ name: Run Notebook & Publish Result
 
 on:
   schedule:
-    - cron: "0 8 * * *"   # Daily 08:00 UTC
+    - cron: "0 7 * * *"   # Daily 08:00 UTC
   workflow_dispatch:
 
 jobs:
