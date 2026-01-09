@@ -1,10 +1,8 @@
 --- Portfolio Performance Summary ---
-Report Generated On: 2026-01-09 13:00:00
+Report Generated On: 2026-01-09 13:10:36
 
-📊 Motilal Oswal Portfolio % Change: -0.09%
+📊 Motilal Oswal Portfolio % Change: -0.17%
 
-📊 Quant Small Cap Portfolio % Change: -0.39%
-  Issues:
-    - Piramal Enterprises (PEL.NS): missing price data
+📊 Quant Small Cap Portfolio % Change: -0.47%
 
-📊 PPFAS Portfolio % Change: -0.54%
+📊 PPFAS Portfolio % Change: -0.56%
