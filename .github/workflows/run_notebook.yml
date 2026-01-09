@@ -2,8 +2,8 @@ name: Run Notebook & Publish Result
 
 on:
   schedule:
-    - cron: "0 8 * * *"     # Every day at 08:00 UTC
-  workflow_dispatch:       # Allow manual trigger
+    - cron: "0 8 * * *"   # Daily 08:00 UTC
+  workflow_dispatch:
 
 jobs:
   build:
@@ -31,18 +31,18 @@ jobs:
           requests \
           lxml
 
-    - name: Execute Jupyter Notebook
+    - name: Execute notebook (FAIL on error)
       run: |
         jupyter nbconvert \
           --to notebook \
           --execute ALL_WEIGHTED_2.ipynb \
+          --ExecutePreprocessor.timeout=600 \
+          --ExecutePreprocessor.kernel_name=python3 \
           --output executed.ipynb
 
     - name: Debug – list files
       run: |
-        echo "Current directory:"
-        pwd
-        echo "All files:"
+        echo "Repo root:"
         ls -R
 
     - name: Publish output to GitHub Pages
