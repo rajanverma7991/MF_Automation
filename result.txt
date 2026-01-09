@@ -1,1 +1,10 @@
-HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: PEL.NS"}}}
+--- Portfolio Performance Summary ---
+Report Generated On: 2026-01-09 12:53:32
+
+📊 Motilal Oswal Portfolio % Change: -0.05%
+
+📊 Quant Small Cap Portfolio % Change: -0.40%
+  Issues:
+    - Piramal Enterprises (PEL.NS): missing price data
+
+📊 PPFAS Portfolio % Change: -0.52%
