@@ -1,8 +1,8 @@
 --- Portfolio Performance Summary ---
-Report Generated On: 2026-03-17 11:32:58
+Report Generated On: 2026-03-18 11:35:23
 
-📊 Motilal Oswal Portfolio % Change: -0.57%
+📊 Motilal Oswal Portfolio % Change: 2.17%
 
-📊 Quant Small Cap Portfolio % Change: 0.06%
+📊 Quant Small Cap Portfolio % Change: 0.77%
 
-📊 PPFAS Portfolio % Change: 0.09%
+📊 PPFAS Portfolio % Change: 0.58%
