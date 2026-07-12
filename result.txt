@@ -1,12 +1,10 @@
 --- Portfolio Performance Summary ---
-Report Generated On: 2026-07-11 12:44:30
+Report Generated On: 2026-07-12 13:00:46
 
-📊 Motilal Oswal Portfolio % Change: 4.28%
-  Issues:
-    - Max Healthcare (MAXHEALTH.NS): Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+📊 Motilal Oswal Portfolio % Change: 2.16%
 
-📊 Quant Small Cap Portfolio % Change: 1.33%
+📊 Quant Small Cap Portfolio % Change: 0.85%
   Issues:
     - Sequent Scientific (SEQUENT.NS): missing price data
 
-📊 PPFAS Portfolio % Change: 0.90%
+📊 PPFAS Portfolio % Change: 0.61%
