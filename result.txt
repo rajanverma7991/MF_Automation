@@ -1,10 +1,10 @@
 --- Portfolio Performance Summary ---
-Report Generated On: 2026-11-17 19:42:21
+Report Generated On: 2026-11-18 19:13:56
 
-📊 Motilal Oswal Portfolio % Change: -0.42%
+📊 Motilal Oswal Portfolio % Change: -1.31%
 
-📊 Quant Small Cap Portfolio % Change: 0.29%
+📊 Quant Small Cap Portfolio % Change: -0.27%
   Issues:
     - Sequent Scientific (SEQUENT.NS): missing price data
 
-📊 PPFAS Portfolio % Change: -0.33%
+📊 PPFAS Portfolio % Change: -0.37%
