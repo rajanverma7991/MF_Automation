@@ -1,5 +1,5 @@
 --- Portfolio Performance Summary ---
-Report Generated On: 2026-11-27 20:20:19
+Report Generated On: 2026-11-28 19:28:56
 
 📊 Motilal Oswal Portfolio % Change: 1.18%
 
@@ -7,4 +7,4 @@ Report Generated On: 2026-11-27 20:20:19
   Issues:
     - Sequent Scientific (SEQUENT.NS): missing price data
 
-📊 PPFAS Portfolio % Change: -0.54%
+📊 PPFAS Portfolio % Change: -0.46%
